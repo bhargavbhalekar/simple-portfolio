@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - Bhargav Bhalekar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+      padding: 0 50px;
+      background-color: rgb(19, 19, 66);
+    }
+    nav .left {
+      font-size: 1.5rem;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    nav ul li {
+      margin: 0 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+    }
+    nav ul li a:hover {
+      color: rgb(167, 167, 224);
+    }
+
+    .servicesSection {
+      max-width: 80vw;
+      margin: auto;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .servicesSection h1 {
+      font-size: 2.5rem;
+      color: #9c97f1;
+      margin-bottom: 40px;
+    }
+    .service-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+    .service-card {
+      background-color: rgb(19, 19, 66);
+      padding: 30px;
+      border-radius: 12px;
+      width: 300px;
+      text-align: left;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+    }
+    .service-card h2 {
+      color: rgb(174, 118, 226);
+      margin-bottom: 15px;
+    }
+    .service-card p {
+      color: #ccc;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Bhargav's Portfolio</div>
+      <ul class="right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="servicesSection">
+    <h1>My Services</h1>
+    <div class="service-container">
+      <div class="service-card">
+        <h2>Web Development</h2>
+        <p>I build responsive and fast websites using HTML, CSS, JavaScript, and modern frameworks for a great user experience.</p>
+      </div>
+      <div class="service-card">
+        <h2>UI/UX Design</h2>
+        <p>Designing intuitive interfaces using tools like Figma, and ensuring smooth user interaction with animations and layout techniques.</p>
+      </div>
+      <div class="service-card">
+        <h2>Backend Development</h2>
+        <p>Creating RESTful APIs and server-side logic using Node.js and Express to manage and serve dynamic data.</p>
+      </div>
+      <div class="service-card">
+        <h2>Quality Assurance</h2>
+        <p>Testing applications to find bugs and ensure smooth functionality, performance, and responsiveness across devices.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

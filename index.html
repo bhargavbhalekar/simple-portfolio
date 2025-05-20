@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhargav Bhalekar - Developer Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(19, 19, 66);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(167, 167, 224);
+      font-size: 1.01rem;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+      color: #a7a7e0;
+    }
+
+
+    main hr {
+      border: 0;
+      background: #9c97f1;
+      height: 1.2px;
+      margin: 60px 84px;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      margin: 130px 0;
+      align-items: center;
+    }
+
+    .firstSection>div {
+      width: 30%;
+    }
+
+    .leftSection {
+      font-size: 3rem;
+    }
+
+    .rightSection img {
+      width: 80%;
+    }
+
+    .purple {
+      color: rgb(174, 118, 226);
+    }
+
+    .text-gray {
+      color: gray;
+    }
+
+    #element {
+      color: rgb(174, 118, 226);
+    }
+
+    .secondSection {
+      max-width: 80vw;
+      margin: auto;
+      height: auto;
+      padding-bottom: 100px;
+    }
+
+    .secondSection h1 {
+      font-size: 1.9rem;
+      margin-bottom: 40px;
+    }
+
+    .secondSection .box {
+      background: white;
+      width: 80%;
+      height: 2px;
+      margin: 56px auto;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .secondSection .vertical {
+      height: 70px;
+      /* Shortened from 120px */
+      width: 1px;
+      background-color: white;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .image-top {
+      width: 23px;
+      position: absolute;
+      top: -32px;
+    }
+
+    .vertical-title {
+      position: absolute;
+      top: 70px;
+      width: 150px;
+      text-align: center;
+      font-weight: bold;
+      color: white;
+    }
+
+    .vertical-desc {
+      position: absolute;
+      top: 95px;
+      width: 150px;
+      text-align: center;
+      color: gray;
+      font-size: 10px;
+    }
+
+    footer {
+      background-color: #0e0e1a;
+    }
+
+    .footer {
+      display: flex;
+      padding: 23px 122px;
+      justify-content: space-evenly;
+    }
+
+    .footer ul {
+      list-stle: none;
+
+    }
+
+    .footer>div {
+      width: 223px;
+    }
+
+    footer .footer-rights {
+      text-align: center;
+      color: gray;
+      padding: 12px;
+    }
+
+    .footer .footer-second {
+      background-color: #0e0e1a;
+    }
+    .resume-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 16px; /* Reduced padding */
+  background-color: #6c63ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px; /* Slightly smaller radius */
+  font-size: 0.9rem; /* Smaller font size */
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.resume-btn:hover {
+  background-color: #554dd8;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Bhargav's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi, My name is <span class="purple">Bhargav</span>
+        <div>and I am a passionate</div>
+        <span id="element"></span>
+        <br><br>
+<a href="resume.pdf" download class="resume-btn">Download Resume</a>
+
+      </div>
+      <div class="rightSection">
+        <img src="bg-removebg-preview.png" alt="Profile Image" />
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="secondSection">
+      <span class="text-gray">What I have done so far</span>
+      <h1>Work Experience</h1>
+
+      <div class="box">
+        <div class="vertical">
+          <img class="image-top" src="icons8-html-5-48.png" alt="HTML Icon" />
+          <div class="vertical-title">HTML Developer</div>
+          <div class="vertical-desc">
+            Built static and responsive websites using HTML5 and CSS3,
+            following modern web design principles.
+          </div>
+        </div>
+
+        <div class="vertical">
+          <img class="image-top" src="icons8-css-48.png" alt="CSS Icon" />
+          <div class="vertical-title">CSS Designer</div>
+          <div class="vertical-desc">
+            Worked with Flexbox, Grid, and animations to enhance UI/UX and
+            build visually appealing layouts.
+          </div>
+        </div>
+
+        <div class="vertical">
+          <img class="image-top" src="icons8-node-js-48.png" alt="Node.js Icon" />
+          <div class="vertical-title">Node.js Developer</div>
+          <div class="vertical-desc">
+            Developed server-side applications, RESTful APIs, and handled
+            backend logic using Node.js and Express.
+          </div>
+        </div>
+
+        <div class="vertical">
+          <img class="image-top" src="icons8-quality-40.png" alt="QA Icon" />
+          <div class="vertical-title">QA Tester</div>
+          <div class="vertical-desc">
+            Conducted functional testing and debugged web applications to
+            ensure seamless performance.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Bhargav's Developer portfolio</h3>
+      </div>
+      <div class="footer-second">
+        <ul>
+          <li><a href="https://github.com/bhargavbhalekar" target="_blank"
+              style="color: white; text-decoration: none;">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/bhargav-bhalekar-8743722aa" target="_blank"
+              style="color: white; text-decoration: none;">LinkedIn</a></li>
+          <li><a href="mailto:bhalekarbhargav12@example.com" style="color: white; text-decoration: none;">Gmail</a></li>
+        </ul>
+      </div>
+
+    <div class="footer-Third">
+  <ul>
+    <li><a href="https://www.instagram.com/bhargav_2.2.2" target="_blank" style="color: white; text-decoration: none;">Instagram</a></li>
+    <li><a href="https://www.youtube.com/@bhalekarfamilyme8010" target="_blank" style="color: white; text-decoration: none;">YouTube</a></li>
+  </ul>
+</div>
+    </div>
+    <div class="footer-rights">
+      &#169; www.bhargavsportfolio.com | All rights reserved
+    </div>
+  </footer>
+
+  <!-- Typed.js Script -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: [
+        "Web Developer",
+        "Graphic Designer",
+        "Web Designer",
+        "QA Tester",
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
+    });
+  </script>
+</body>
+
+</html>
